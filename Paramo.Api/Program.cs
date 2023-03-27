@@ -13,7 +13,16 @@ namespace Paramo.Api
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            Console.WriteLine(Environment.CurrentDirectory);
+            Console.WriteLine(Environment.Is64BitOperatingSystem);
+            Console.WriteLine(Environment.Is64BitProcess);
+            Console.WriteLine(Environment.OSVersion);
+            Console.WriteLine(Environment.MachineName);
+            Console.WriteLine(Environment.SystemDirectory);
+            Console.WriteLine(Environment.UserName);
+            Console.WriteLine(Environment.Version);
+
+            CreateHostBuilder(args).Build().Run();           
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
