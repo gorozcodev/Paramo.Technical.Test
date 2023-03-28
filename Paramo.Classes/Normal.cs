@@ -29,6 +29,14 @@ namespace Paramo
                         var gif = value * percentage;
                         money = value + gif;
                     }
+                    else
+                    {
+                        money = value;
+                    }
+                }
+                else
+                {
+                    money = value;
                 }
             } 
         }

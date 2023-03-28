@@ -19,6 +19,10 @@
                     var gif = value * 2;
                     money = value + gif;
                 }
+                else
+                {
+                    money = value;
+                }
             }
         }
 

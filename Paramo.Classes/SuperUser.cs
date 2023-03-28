@@ -21,7 +21,11 @@ namespace Paramo
                     var percentage = Convert.ToDecimal(0.20);
                     var gif = value * percentage;
                     money = value + gif;
-                }                
+                }
+                else
+                {
+                    money = value;
+                }
             }
         }
 
