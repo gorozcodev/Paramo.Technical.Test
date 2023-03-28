@@ -13,14 +13,16 @@ namespace Paramo.Api
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine(Environment.CurrentDirectory);
-            Console.WriteLine(Environment.Is64BitOperatingSystem);
-            Console.WriteLine(Environment.Is64BitProcess);
-            Console.WriteLine(Environment.OSVersion);
-            Console.WriteLine(Environment.MachineName);
-            Console.WriteLine(Environment.SystemDirectory);
-            Console.WriteLine(Environment.UserName);
-            Console.WriteLine(Environment.Version);
+            Console.WriteLine("Welcome to the paramo API !");
+            Console.WriteLine("Setting up runtime enviroment !");
+            Console.WriteLine("Pelase Wait.......");
+            Console.WriteLine("Pelase Wait.......");
+            Console.WriteLine("Current Directory: " + Environment.CurrentDirectory);
+            Console.WriteLine("Operating System: " + Environment.OSVersion);
+            Console.WriteLine("Current Machine Name: " + Environment.MachineName);
+            Console.WriteLine("System Directory: " + Environment.SystemDirectory);
+            Console.WriteLine("User Name: " + Environment.UserName);
+            Console.WriteLine("Enviroment Version: " + Environment.Version);
 
             CreateHostBuilder(args).Build().Run();           
         }
